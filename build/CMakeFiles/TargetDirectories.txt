@@ -1,3 +1,0 @@
-/root/c_play/algorithms_in_c/build/CMakeFiles/AlgorithmsInC.dir
-/root/c_play/algorithms_in_c/build/CMakeFiles/edit_cache.dir
-/root/c_play/algorithms_in_c/build/CMakeFiles/rebuild_cache.dir
