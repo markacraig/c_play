@@ -1,6 +1,6 @@
 # This repo is for storing the exercises from "Algorithms in C"
 
-## To Ruild
+## To Build
     mkdir build
     cd build
     cmake ..
