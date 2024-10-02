@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/AlgorithmsInC.dir/main.c.o CMakeFiles/AlgorithmsInC.dir/src/linked_list.c.o CMakeFiles/AlgorithmsInC.dir/test/test_linked_list.c.o -o AlgorithmsInC 
