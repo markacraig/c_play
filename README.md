@@ -1,4 +1,4 @@
-# This repo is for storing the exercises from Algorithms in C
+# This repo is for storing the exercises from "Algorithms in C"
 
 ## To Ruild
     mkdir build
