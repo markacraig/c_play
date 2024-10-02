@@ -1,7 +1,12 @@
 # This repo is for storing the exercises from Algorithms in C
 
-## To build
+## To Ruild
     mkdir build
     cd build
     cmake ..
     cmake --build .
+
+
+## To Run
+    cd build
+    ./AlgorithmsInC
