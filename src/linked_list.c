@@ -1,9 +1,18 @@
+/**************************************************************************//**
+ * @file linked_list.c
+ * @brief Source file for linked list examples in Algorithms In C book.
+ * 
+ * @author Mark Craig
+ * @date 2024-10-02
+ *
+ ******************************************************************************/
 #include <stdlib.h>
 #include <stdio.h>
 #include "linked_list.h"
 
 link freelist;
 
+/* Algorithms In C Exercises */
 int get_num_nodes_circular_list(link x) {
     int cnt = 1;
 
@@ -161,6 +170,7 @@ link move_node_to_start_of_list(link a, link x) {
     return a;
 }
 
+/* List Interface API */
 void initNodes(int N) {
     int i = 0;
 
