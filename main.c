@@ -1,12 +1,12 @@
-/****************************************************************
- * 
- * This program is used for solving problems from the Algorithms
+/**************************************************************************//**
+ * @file main.c
+ * @brief This program is used for solving problems from the Algorithms
  * in C book by Robert Sedgewick.
  * 
- * Author: Mark Craig
- * Date: 2024-09-19 
+ * @author Mark Craig
+ * @date 2024-09-19 
  * 
- ****************************************************************/
+ ******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,6 +61,20 @@ int main() {
 
     printf("Testing: get_idx_of_smallest_val()\n");
     retval = test_get_idx_of_smallest_val(TEST_GET_NUM_NODES_NODE_CNT);
+    if (retval)
+        test_cnt_fail++;
+    else
+        test_cnt_pass++;
+
+    printf("Testing: free_nodes_in_list()\n");
+    retval = test_free_nodes_in_list(TEST_GET_NUM_NODES_NODE_CNT);
+    if (retval)
+        test_cnt_fail++;
+    else
+        test_cnt_pass++;
+
+    printf("Testing: free_nth_node_in_list()\n");
+    retval = test_free_nth_node_in_list(TEST_GET_NUM_NODES_NODE_CNT);
     if (retval)
         test_cnt_fail++;
     else
