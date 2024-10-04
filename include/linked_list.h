@@ -88,6 +88,22 @@ link get_idx_of_smallest_val(link x);
  */
 link move_node_to_start_of_list(link a, link x);
 
+/**
+ * @brief Frees all nodes on list provided.
+ * 
+ * @param x Pointer to list to free nodes.
+ * @return Returns NULL pointer if all nodes freed.
+ */
+link free_nodes_in_list(link x);
+
+/**
+ * @brief Frees Nth node on list provided.
+ * 
+ * @param x Pointer to list to free nodes.
+ * @return Returns NULL pointer if all nodes freed.
+ */
+link free_nth_node_in_list(link x, int n);
+
 /***** List Interface *****/
 void initNodes(int);
 link newNode(int);

@@ -170,6 +170,47 @@ link move_node_to_start_of_list(link a, link x) {
     return a;
 }
 
+link free_nodes_in_list(link x) {
+    link t = NULL;
+
+    while (x != NULL) {
+        t = x->next;
+        printf("Value: %d\n", x->item);
+        free(x);
+        x = t;
+    }
+
+    return NULL;
+}
+
+link free_nth_node_in_list(link x, int n) {
+    link t = NULL, prev = NULL, head = x;
+    int i = 1;
+
+    while (x != NULL) {
+        t = x->next;
+        if (n == 1) {
+            printf("Value: %d\n", x->item);
+            free(x);
+            head = t;
+        }
+        else {
+            if (i % n == 0) {
+                printf("Value: %d\n", x->item);
+                free(x);
+                prev->next = t;
+            }
+            else {
+                prev = x;
+            }
+        }
+        x = t;
+        i++;
+    }
+
+    return head;
+}
+
 /* List Interface API */
 void initNodes(int N) {
     int i = 0;
