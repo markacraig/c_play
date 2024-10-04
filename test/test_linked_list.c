@@ -1,10 +1,10 @@
 /****************************************************************
- * 
- * This program is used for solving problems from the Algorithms
+ * @file test_linked_list.c
+ * @brief This program is used for solving problems from the Algorithms
  * in C book by Robert Sedgewick.
  * 
- * Author: Mark Craig
- * Date: 2024-09-19 
+ * @author Mark Craig
+ * @date 2024-09-19 
  * 
  ****************************************************************/
 
@@ -188,4 +188,38 @@ int test_get_idx_of_smallest_val(int num_nodes) {
     print_node_item_value_in_list(sm_val_idx);
 
     return 0;
+}
+
+int test_free_nodes_in_list(int num_nodes) {
+    link x = generate_linked_list(num_nodes, false, false);
+
+    printf("Printing Linear List values.\n");
+    print_node_item_value_in_list(x);
+
+    x = free_nodes_in_list(x);
+
+    if (x == NULL) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+
+
+int test_free_nth_node_in_list(int num_nodes) {
+    link x = generate_linked_list(num_nodes, false, false);
+
+    printf("Printing Linear List values.\n");
+    print_node_item_value_in_list(x);
+
+    x = free_nth_node_in_list(x, 2);
+
+    printf("Printing Linear List after every 2nd node removed.\n");
+    print_node_item_value_in_list(x);
+
+    if (x == NULL) {
+        return -1;
+    } else {
+        return 0;
+    }
 }
